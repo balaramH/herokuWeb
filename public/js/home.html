@@ -1,0 +1,149 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Music libary</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900,900i" type="text/css" media="all"> -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- {{#each css}}
+    <link rel="stylesheet" href="../public/css/style.css"> 
+    {{/each}} -->
+</head>
+
+<body>
+    <!-- {{{body}}} -->
+    <div class="container-fluid">
+
+        <div class="icon-bar menus">
+            <a class="active" href="#"><i class="fa fa-home"><title>Music libary</title></i></a>
+            <a href="#"><i class="fa fa-search"><title>Search song here</title></i></a>
+            <a href="#"><i class="fa fa-envelope"><title>E-mail us</title></i></a>
+            <a href="#"><i class="fa fa-globe"><title>Abous us</title></i></a>
+            <a href="#"><i class="fa fa-phone"><title>Contact us</title></i></a>
+        </div>
+        <div class="myBg">
+            <img src="../img/mm.png">
+        </div>
+        <!-- <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div> -->
+        <div class="mylist">
+            <div class="row">
+                <div class="col-sm-2 badge-primary badge-pill p-1 m-1">
+                    <h5>Romantic</h5>
+                </div>
+                <div class="col-sm-2 badge-info badge-pill p-1 m-1">
+                    <h5>Classsical</h5>
+                </div>
+                <div class="col-sm-2 badge-primary badge-pill p-1 m-1">
+                    <h5>Dance music</h5>
+                </div>
+                <div class="col-sm-2 badge-info badge-pill p-1 m-1">
+                    <h5>Sad Music</h5>
+                </div>
+                <div class="col-sm-2 badge-danger badge-pill p-1 m-1">
+                    <h5>Sport Music</h5>
+                </div>
+                <div class="col-sm-1 badge-Warning badge-pill p-1 m-1">
+                    <h5>Artist</h5>
+                </div>
+            </div>
+            <div class="row m-1">
+                <div class="col-sm-2 imm">
+                    <img src="../img/khairiyat.webp" alt="" style="width:100%">
+                    <!-- <iframe src="music/Tor Motoi .mp3" frameborder="badge-info"> this is a song</iframe> -->
+                    <!-- <audio controls autoplay>
+                     <source src="horse.ogg" type="audio/ogg">
+                  </audio> -->
+                    <div class="card-body">
+                        <h6 class="card-title">khairiyat to puchho</h6>
+                        <p class="card-text">Arijit singh,Chhichhore</p>
+                        <button href="#" class="btn btn-primary"><span><i class="fa fa-play" onclick="playAudio()">Play</i> </span> <span><i class="fa fa-pause" onclick="pauseAudio()"> Pause </i></span></button>
+                    </div>
+                </div>
+                <audio id="musicPP">
+                    <source src="../audio/Tor Motoi .mp3" type="audio/ogg">
+                    <source src="../audio/Tor Motoi .mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio>
+
+                <div class=" col-sm-2 imm">
+                    <img src="../img/mere Mitba.webp" alt="" style="width:100%">
+                    <!-- <iframe src="music/Tor Motoi .mp3" frameborder="badge-info"> this is a song</iframe> -->
+                    <!-- <audio controls autoplay>
+                     <source src="horse.ogg" type="audio/ogg">
+                  </audio> -->
+                    <div class="card-body">
+                        <h6 class="card-title">Mere mitba mere geet</h6>
+                        <p class="card-text">Mhd. Raffi ,Geet,1971</p>
+                        <button href="#" class="btn btn-primary"><i class="fa fa-play" onclick="playAudio()">Play</i>  <i class="fa fa-pause" onclick="pauseAudio()"> Pause </i></button>
+                    </div>
+                </div>
+                <div class=" col-sm-2 imm">
+                    <img src="../img/Dance.jpg" alt="" style="width:100%">
+                    <!-- <iframe src="music/Tor Motoi .mp3" frameborder="badge-info"> this is a song</iframe> -->
+                    <!-- <audio controls autoplay>
+                     <source src="horse.ogg" type="audio/ogg">
+                  </audio> -->
+                    <div class="card-body">
+                        <h6 class="card-title">2022 party song</h6>
+                        <p class="card-text">All mix mashup, celebration new year</p>
+                        <button href="#" class="btn btn-primary"><i class="fa fa-play" onclick="playAudio()">Play</i>  <i class="fa fa-pause" onclick="pauseAudio()"> Pause </i></button>
+                    </div>
+                </div>
+                <div class=" col-sm-2 imm">
+                    <img src="../img/sad.jpg" alt="" style="width:100%">
+                    <!-- <iframe src="music/Tor Motoi .mp3" frameborder="badge-info"> this is a song</iframe> -->
+                    <!-- <audio controls autoplay>
+                     <source src="horse.ogg" type="audio/ogg">
+                  </audio> -->
+                    <div class="card-body">
+                        <h6 class="card-title">Bewafa tera masoom </h6>
+                        <p class="card-text">Jubin Nautiyal,Album</p>
+                        <button href="#" class="btn btn-primary"><i class="fa fa-play" onclick="playAudio()">Play</i>  <i class="fa fa-pause" onclick="pauseAudio()"> Pause </i></button>
+                    </div>
+                </div>
+                <div class=" col-sm-2 imm">
+                    <img src="../img/BGB.webp" alt="" style="width:100%">
+                    <!-- <iframe src="music/Tor Motoi .mp3" frameborder="badge-info"> this is a song</iframe> -->
+                    <!-- <audio controls autoplay>
+                     <source src="horse.ogg" type="audio/ogg">
+                  </audio> -->
+                    <div class="card-body">
+                        <h6 class="card-title">Tu bhagg Milkha</h6>
+                        <p class="card-text">Bhagg Milkha Bhagg,2013,Siddharth mahadhaban</p>
+                        <button href="#" class="btn btn-primary"><i class="fa fa-play" onclick="playAudio()">Play</i>  <i class="fa fa-pause" onclick="pauseAudio()"> Pause </i></button>
+                    </div>
+                </div>
+                <div class=" col-sm-2 imm">
+                    <img src="../img/jl.webp" alt="" style="width:100%">
+                    <!-- <iframe src="music/Tor Motoi .mp3" frameborder="badge-info"> this is a song</iframe> -->
+                    <!-- <audio controls autoplay>
+                     <source src="horse.ogg" type="audio/ogg">
+                  </audio> -->
+                    <div class="card-body">
+                        <h6 class="card-title">Jennifer Lopze</h6>
+                        <p class="card-text">English singer, on the floor, 2011</p>
+                        <button href="#" class="btn btn-primary"><i class="fa fa-play" onclick="playAudio()">Play</i>  <i class="fa fa-pause" onclick="pauseAudio()"> Pause </i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../js/index.js"></script>
+
+</body>
+
+</html>
